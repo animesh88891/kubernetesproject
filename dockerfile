@@ -9,7 +9,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page288/fiu.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip fiu.zip
-RUN cp -rvf fiu/* .
-RUN rm -rf fiu  fiu.zip
+RUN cp -rvf html/* .
+RUN rm -rf html  fiu.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
