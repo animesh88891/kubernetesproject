@@ -12,4 +12,4 @@ RUN unzip fiu.zip
 RUN cp -rvf html/* .
 RUN rm -rf html  fiu.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
-EXPOSE 80 22
+EXPOSE 80
