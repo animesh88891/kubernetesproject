@@ -3,9 +3,9 @@
   tasks: 
      - name: delete old deployment
        command: kubectl delete -f /home/ubuntu/deployment.yml
-     - name: delete old service
+     - name: delete old Service
        command: kubectl delete -f /home/ubuntu/Service.yml
      - name: create new deployment
        command: kubectl apply -f /home/ubuntu/deployment.yml
-     - name: create new service
+     - name: create new Service
        command: kubectl apply -f /home/ubuntu/Service.yml
